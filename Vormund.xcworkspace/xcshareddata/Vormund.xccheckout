@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BFA67063-5563-4C3D-B32D-4C3628C95354</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Vormund</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>873B2DF7-362B-41F2-88D3-3E3A96166291</key>
+		<string>https://github.com/immasara/Vormund.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Vormund.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>873B2DF7-362B-41F2-88D3-3E3A96166291</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/immasara/Vormund.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>873B2DF7-362B-41F2-88D3-3E3A96166291</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>873B2DF7-362B-41F2-88D3-3E3A96166291</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Vormund</string>
+		</dict>
+	</array>
+</dict>
+</plist>
