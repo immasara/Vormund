@@ -53,6 +53,14 @@
 {
     [self.locationManager stopRangingBeaconsInRegion:self.beaconRegion];
     self.labelStatus.text = @"No";
+    
+    //Local Push Notification
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:1];
+    localNotification.alertBody = [NSString stringWithFormat:@"Beacon out of range"];
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    localNotification.soundName = UILocalNotificationDefaultSoundName;
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
 
 -(void)locationManager:(CLLocationManager*)manager
@@ -71,6 +79,14 @@
     }
 
     self.labelStatus.text = statusText;
+    
+    //Local Push Notification
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:1];
+    localNotification.alertBody = [NSString stringWithFormat:@"Beacon found (%d)! ", (int)beacons.count];
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    localNotification.soundName = UILocalNotificationDefaultSoundName;
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
 
 @end

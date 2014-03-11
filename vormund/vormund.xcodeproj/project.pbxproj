@@ -26,6 +26,7 @@
 		1222F29318CD52DE008C19D1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F29218CD52DE008C19D1 /* CoreBluetooth.framework */; };
 		1222F29518CD52EB008C19D1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F29418CD52EB008C19D1 /* CoreLocation.framework */; };
 		1222F29918CD5438008C19D1 /* GlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1222F29818CD5438008C19D1 /* GlobalConstants.m */; };
+		1222F29C18CF5BB0008C19D1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F29B18CF5BB0008C19D1 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		1222F29418CD52EB008C19D1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1222F29718CD5438008C19D1 /* GlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConstants.h; sourceTree = "<group>"; };
 		1222F29818CD5438008C19D1 /* GlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConstants.m; sourceTree = "<group>"; };
+		1222F29B18CF5BB0008C19D1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				1222F29318CD52DE008C19D1 /* CoreBluetooth.framework in Frameworks */,
 				1222F25A18CBE64A008C19D1 /* CoreGraphics.framework in Frameworks */,
 				1222F25C18CBE64A008C19D1 /* UIKit.framework in Frameworks */,
+				1222F29C18CF5BB0008C19D1 /* MapKit.framework in Frameworks */,
 				1222F25818CBE64A008C19D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +118,7 @@
 		1222F25618CBE64A008C19D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1222F29B18CF5BB0008C19D1 /* MapKit.framework */,
 				1222F29418CD52EB008C19D1 /* CoreLocation.framework */,
 				1222F29218CD52DE008C19D1 /* CoreBluetooth.framework */,
 				1222F25718CBE64A008C19D1 /* Foundation.framework */,
@@ -228,6 +232,17 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Pluggables;
 				TargetAttributes = {
+					1222F25318CBE64A008C19D1 = {
+						DevelopmentTeam = FE4KUE66JE;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					1222F27A18CBE64A008C19D1 = {
 						TestTargetID = 1222F25318CBE64A008C19D1;
 					};
@@ -420,11 +435,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vormund/vormund-Prefix.pch";
 				INFOPLIST_FILE = "vormund/vormund-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -434,11 +452,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vormund/vormund-Prefix.pch";
 				INFOPLIST_FILE = "vormund/vormund-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -504,6 +525,7 @@
 				1222F28E18CBE64A008C19D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1222F28F18CBE64A008C19D1 /* Build configuration list for PBXNativeTarget "vormundTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +534,7 @@
 				1222F29118CBE64A008C19D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
