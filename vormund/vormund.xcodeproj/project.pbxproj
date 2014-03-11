@@ -15,14 +15,17 @@
 		1222F26818CBE64A008C19D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1222F26718CBE64A008C19D1 /* AppDelegate.m */; };
 		1222F26B18CBE64A008C19D1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1222F26918CBE64A008C19D1 /* Main_iPhone.storyboard */; };
 		1222F26E18CBE64A008C19D1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1222F26C18CBE64A008C19D1 /* Main_iPad.storyboard */; };
-		1222F27118CBE64A008C19D1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1222F27018CBE64A008C19D1 /* FirstViewController.m */; };
-		1222F27418CBE64A008C19D1 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1222F27318CBE64A008C19D1 /* SecondViewController.m */; };
+		1222F27118CBE64A008C19D1 /* BeaconFinderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1222F27018CBE64A008C19D1 /* BeaconFinderViewController.m */; };
+		1222F27418CBE64A008C19D1 /* BroadcastBeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1222F27318CBE64A008C19D1 /* BroadcastBeaconViewController.m */; };
 		1222F27618CBE64A008C19D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1222F27518CBE64A008C19D1 /* Images.xcassets */; };
 		1222F27D18CBE64A008C19D1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F27C18CBE64A008C19D1 /* XCTest.framework */; };
 		1222F27E18CBE64A008C19D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F25718CBE64A008C19D1 /* Foundation.framework */; };
 		1222F27F18CBE64A008C19D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F25B18CBE64A008C19D1 /* UIKit.framework */; };
 		1222F28718CBE64A008C19D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1222F28518CBE64A008C19D1 /* InfoPlist.strings */; };
 		1222F28918CBE64A008C19D1 /* vormundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1222F28818CBE64A008C19D1 /* vormundTests.m */; };
+		1222F29318CD52DE008C19D1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F29218CD52DE008C19D1 /* CoreBluetooth.framework */; };
+		1222F29518CD52EB008C19D1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F29418CD52EB008C19D1 /* CoreLocation.framework */; };
+		1222F29918CD5438008C19D1 /* GlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1222F29818CD5438008C19D1 /* GlobalConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,16 +51,20 @@
 		1222F26718CBE64A008C19D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1222F26A18CBE64A008C19D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		1222F26D18CBE64A008C19D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		1222F26F18CBE64A008C19D1 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		1222F27018CBE64A008C19D1 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		1222F27218CBE64A008C19D1 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		1222F27318CBE64A008C19D1 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1222F26F18CBE64A008C19D1 /* BeaconFinderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeaconFinderViewController.h; sourceTree = "<group>"; };
+		1222F27018CBE64A008C19D1 /* BeaconFinderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconFinderViewController.m; sourceTree = "<group>"; };
+		1222F27218CBE64A008C19D1 /* BroadcastBeaconViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BroadcastBeaconViewController.h; sourceTree = "<group>"; };
+		1222F27318CBE64A008C19D1 /* BroadcastBeaconViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BroadcastBeaconViewController.m; sourceTree = "<group>"; };
 		1222F27518CBE64A008C19D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1222F27B18CBE64A008C19D1 /* vormundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vormundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1222F27C18CBE64A008C19D1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1222F28418CBE64A008C19D1 /* vormundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vormundTests-Info.plist"; sourceTree = "<group>"; };
 		1222F28618CBE64A008C19D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1222F28818CBE64A008C19D1 /* vormundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vormundTests.m; sourceTree = "<group>"; };
+		1222F29218CD52DE008C19D1 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		1222F29418CD52EB008C19D1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1222F29718CD5438008C19D1 /* GlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConstants.h; sourceTree = "<group>"; };
+		1222F29818CD5438008C19D1 /* GlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1222F29518CD52EB008C19D1 /* CoreLocation.framework in Frameworks */,
+				1222F29318CD52DE008C19D1 /* CoreBluetooth.framework in Frameworks */,
 				1222F25A18CBE64A008C19D1 /* CoreGraphics.framework in Frameworks */,
 				1222F25C18CBE64A008C19D1 /* UIKit.framework in Frameworks */,
 				1222F25818CBE64A008C19D1 /* Foundation.framework in Frameworks */,
@@ -106,6 +115,8 @@
 		1222F25618CBE64A008C19D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1222F29418CD52EB008C19D1 /* CoreLocation.framework */,
+				1222F29218CD52DE008C19D1 /* CoreBluetooth.framework */,
 				1222F25718CBE64A008C19D1 /* Foundation.framework */,
 				1222F25918CBE64A008C19D1 /* CoreGraphics.framework */,
 				1222F25B18CBE64A008C19D1 /* UIKit.framework */,
@@ -117,14 +128,15 @@
 		1222F25D18CBE64A008C19D1 /* vormund */ = {
 			isa = PBXGroup;
 			children = (
+				1222F29618CD5405008C19D1 /* Helpers */,
 				1222F26618CBE64A008C19D1 /* AppDelegate.h */,
 				1222F26718CBE64A008C19D1 /* AppDelegate.m */,
 				1222F26918CBE64A008C19D1 /* Main_iPhone.storyboard */,
 				1222F26C18CBE64A008C19D1 /* Main_iPad.storyboard */,
-				1222F26F18CBE64A008C19D1 /* FirstViewController.h */,
-				1222F27018CBE64A008C19D1 /* FirstViewController.m */,
-				1222F27218CBE64A008C19D1 /* SecondViewController.h */,
-				1222F27318CBE64A008C19D1 /* SecondViewController.m */,
+				1222F26F18CBE64A008C19D1 /* BeaconFinderViewController.h */,
+				1222F27018CBE64A008C19D1 /* BeaconFinderViewController.m */,
+				1222F27218CBE64A008C19D1 /* BroadcastBeaconViewController.h */,
+				1222F27318CBE64A008C19D1 /* BroadcastBeaconViewController.m */,
 				1222F27518CBE64A008C19D1 /* Images.xcassets */,
 				1222F25E18CBE64A008C19D1 /* Supporting Files */,
 			);
@@ -158,6 +170,15 @@
 				1222F28518CBE64A008C19D1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1222F29618CD5405008C19D1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1222F29718CD5438008C19D1 /* GlobalConstants.h */,
+				1222F29818CD5438008C19D1 /* GlobalConstants.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1222F27418CBE64A008C19D1 /* SecondViewController.m in Sources */,
+				1222F27418CBE64A008C19D1 /* BroadcastBeaconViewController.m in Sources */,
+				1222F29918CD5438008C19D1 /* GlobalConstants.m in Sources */,
 				1222F26818CBE64A008C19D1 /* AppDelegate.m in Sources */,
-				1222F27118CBE64A008C19D1 /* FirstViewController.m in Sources */,
+				1222F27118CBE64A008C19D1 /* BeaconFinderViewController.m in Sources */,
 				1222F26418CBE64A008C19D1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,7 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vormund/vormund-Prefix.pch";
 				INFOPLIST_FILE = "vormund/vormund-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -415,7 +437,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vormund/vormund-Prefix.pch";
 				INFOPLIST_FILE = "vormund/vormund-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
