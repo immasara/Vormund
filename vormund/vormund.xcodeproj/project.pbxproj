@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12222D6C18D13A5500A26C62 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12222D6B18D13A5500A26C62 /* MapKit.framework */; };
 		1222F25818CBE64A008C19D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F25718CBE64A008C19D1 /* Foundation.framework */; };
 		1222F25A18CBE64A008C19D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F25918CBE64A008C19D1 /* CoreGraphics.framework */; };
 		1222F25C18CBE64A008C19D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F25B18CBE64A008C19D1 /* UIKit.framework */; };
@@ -26,7 +27,6 @@
 		1222F29318CD52DE008C19D1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F29218CD52DE008C19D1 /* CoreBluetooth.framework */; };
 		1222F29518CD52EB008C19D1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F29418CD52EB008C19D1 /* CoreLocation.framework */; };
 		1222F29918CD5438008C19D1 /* GlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1222F29818CD5438008C19D1 /* GlobalConstants.m */; };
-		1222F29C18CF5BB0008C19D1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1222F29B18CF5BB0008C19D1 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12222D6B18D13A5500A26C62 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1222F25418CBE64A008C19D1 /* vormund.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vormund.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1222F25718CBE64A008C19D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1222F25918CBE64A008C19D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,7 +67,6 @@
 		1222F29418CD52EB008C19D1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1222F29718CD5438008C19D1 /* GlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalConstants.h; sourceTree = "<group>"; };
 		1222F29818CD5438008C19D1 /* GlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalConstants.m; sourceTree = "<group>"; };
-		1222F29B18CF5BB0008C19D1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 				1222F29318CD52DE008C19D1 /* CoreBluetooth.framework in Frameworks */,
 				1222F25A18CBE64A008C19D1 /* CoreGraphics.framework in Frameworks */,
 				1222F25C18CBE64A008C19D1 /* UIKit.framework in Frameworks */,
-				1222F29C18CF5BB0008C19D1 /* MapKit.framework in Frameworks */,
+				12222D6C18D13A5500A26C62 /* MapKit.framework in Frameworks */,
 				1222F25818CBE64A008C19D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +118,7 @@
 		1222F25618CBE64A008C19D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1222F29B18CF5BB0008C19D1 /* MapKit.framework */,
+				12222D6B18D13A5500A26C62 /* MapKit.framework */,
 				1222F29418CD52EB008C19D1 /* CoreLocation.framework */,
 				1222F29218CD52DE008C19D1 /* CoreBluetooth.framework */,
 				1222F25718CBE64A008C19D1 /* Foundation.framework */,
@@ -235,6 +235,12 @@
 					1222F25318CBE64A008C19D1 = {
 						DevelopmentTeam = FE4KUE66JE;
 						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
 							com.apple.iCloud = {
 								enabled = 0;
 							};
