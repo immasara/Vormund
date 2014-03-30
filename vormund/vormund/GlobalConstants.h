@@ -11,6 +11,7 @@
 extern NSString* const kBeaconRegionBroadcast;
 extern NSString* const kTestBeaconId;
 extern NSString* const kEstimoteBeaconId;
+extern NSString* const kChipoloBeaconId;
 
 @interface GlobalConstants : NSObject
 
